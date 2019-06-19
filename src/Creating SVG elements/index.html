@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Creating SVG element</title>
+  <script src="../../assets/d3/d3.js"></script>
+  <link rel="stylesheet" href="../../assets/CSS/index.css">
+</head>
+<body>
+  <h1>Creating SVG element</h1>
+  <svg class="bar-chart"></svg>
+  <div>
+    <svg width="500px" height="300px">
+      <path d="m150 200 200 0
+      L200 240
+      L100 240
+      L150 200"
+      style="fill:white;stroke:red;stroke-width:2"/>
+    </svg>
+    <svg width="500px" height="300px">
+      <path d="M150 200 200 0
+      L200 240
+      L100 240
+      L150 200"
+      style="fill:white;stroke:red;stroke-width:2"/>
+    </svg>
+    <svg width="500px" height="300px">
+      <path d="M100 10 v100 h100 v-100 Z" 
+      style="fill:white;stroke:red;stroke-width:2"/>
+    </svg>
+    <svg width="500px" height="300px">
+      <path d="M53 134
+      C53 134 51 134 51 134
+      C51 139 53 144 56 144" 
+      style="fill:white;stroke:red;stroke-width:2"/>
+      <path d="M153 134
+      C153 134 151 134 151 134
+      C151 139 153 144 156 144" 
+      style="fill:white;stroke:red;stroke-width:2"/>
+    </svg>
+    <svg width="300" height="100">
+      <defs>
+        <g id="myCircle">
+          <!-- <text x="25" y="20">圆形</text> -->
+          <circle cx="0" cy="0" r="20"/>
+        </g>
+      </defs>    
+      <use href="#myCircle" x="20" y="40" />
+      <use href="#myCircle" x="60" y="40" fill="blue" />
+      <use href="#myCircle" x="200" y="40" fill="white" stroke="blue" />
+    </svg>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

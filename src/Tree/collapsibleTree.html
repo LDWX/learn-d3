@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Creating a simple bar chart</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <!-- <script src="../../assets/d3/d3.js"></script> -->
+  <style type="text/css">
+  
+    .node {
+      /* cursor: pointer; */
+    }
+  
+    .overlay{
+        background-color:#EEE;
+    }
+     
+    .node circle {
+      cursor: pointer;
+      fill: #fff;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+    }
+     
+    .node text {
+      font-size:10px; 
+      font-family:sans-serif;
+    }
+     
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 1.5px;
+    }
+  
+    .templink {
+      fill: none;
+      stroke: red;
+      stroke-width: 3px;
+    }
+  
+    .ghostCircle.show{
+      display:block;
+    }
+  
+    .ghostCircle, .activeDrag .ghostCircle{
+      display: none;
+    }
+
+    .rect-controller {
+      cursor: pointer;
+      border: 1px solid black;
+      line-height: 30px;
+
+    }
+
+    .close-icon {
+      cursor: pointer;
+    }
+  
+  </style>
+  <style>
+  .testNode {
+    position: fixed;
+    display: none;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+  }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">collapsibleTree</h1>
+
+  <div id="tree-container"></div>
+  <div class="testNode">hello world</div>
+
+  <script src="./collapsibleTree.js"></script>
+</body>
+</html>

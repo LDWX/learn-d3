@@ -1,0 +1,30 @@
+.bar-chart {
+  background: pink; }
+
+.horizontal-bar + .horizontal-bar {
+  margin-top: 10px; }
+
+.chart {
+  border: 1px solid black; }
+
+.chart-frame {
+  font-size: 0;
+  width: 500px;
+  height: 300px; }
+
+.chart div {
+  box-sizing: border-box;
+  font: 14px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  color: white; }
+  .chart div + div {
+    margin-top: 10px; }
+
+.bar {
+  user-select: none;
+  border: 1px solid steelblue;
+  color: pink !important; }
+
+/*# sourceMappingURL=index.css.map */
